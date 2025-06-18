@@ -1,0 +1,266 @@
+/* Reset styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#eb81a8 , #ffe6f0);
+  height: 100%;
+}
+
+/* Centered container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Login/signup box */
+.login-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.2s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-4px);
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+  font-size: 26px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels and inputs */
+.login-box label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.login-box input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.login-box input:focus {
+  border-color: #ff6ea9;
+  outline: none;
+}
+
+/* Buttons */
+.login-box button {
+  padding: 12px;
+  background-color: #ff6ea9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #ff5397;
+}
+
+/* Error message */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Mode switch */
+.switch-mode {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.switch-mode span {
+  color: #ff6ea9;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+} 
+
+.login-header {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.login-header h1 {
+  color: white;
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.login-header h3 {
+  color: white;
+  font-size: 20px;
+  margin: 8px 0 20px;
+}
+
+.sword-image {
+  width: 100px;
+  height: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+
+
+
+.login-header {
+    font-family: 'Rajdhani', sans-serif;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.login-header h1 {
+    font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 70px;
+  font-weight: 1000;
+  margin-top: -20px;
+}
+
+.login-header h3 {
+    font-family: 'Rajdhani', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.sword-image {
+  width: 100px;
+  height: auto;
+  margin-top:-20px;
+    /* or any solid color */
+  padding: 10px;             /* optional: adds spacing around image */
+  border-radius: 12px;       /* optional: rounded corners */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); optional: soft shadow
+} */
+}
+
+
+/* Tablet devices (width ≤ 768px) */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .login-box {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .login-header {
+    top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-header h1 {
+    font-size: 48px;
+  }
+
+  .login-header h3 {
+    font-size: 18px;
+  }
+
+  .sword-image {
+    width: 70px;
+    margin-top: -10px;
+  }
+}
+
+/* Mobile devices (width ≤ 480px) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .login-box {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  .login-header {
+    top: 10px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .login-header h1 {
+    font-size: 32px;
+  }
+
+  .login-header h3 {
+    font-size: 16px;
+  }
+
+  .sword-image {
+    width: 55px;
+    margin-top: -5px;
+  }
+
+  .login-box input,
+  .login-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .switch-mode {
+    font-size: 14px;
+  }
+}
+
+.login-header h1 {
+  font-size: clamp(32px, 6vw, 70px); /* fluid resizing */
+  text-align: center;
+  word-break: break-word;  /* breaks long text */
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+

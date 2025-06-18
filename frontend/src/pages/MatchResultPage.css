@@ -1,0 +1,45 @@
+.result-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1e1e1e;
+  border-radius: 1rem;
+  text-align: center;
+  color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.player-result {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.winner {
+  background: #2e7d32;
+}
+
+.loser {
+  background: #b71c1c;
+}
+
+.points-win {
+  color: #76ff03;
+  font-weight: bold;
+}
+
+.points-lose {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.home-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #2196f3;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

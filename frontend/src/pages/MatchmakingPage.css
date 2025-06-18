@@ -1,0 +1,130 @@
+/* Remove full-page wrapper background */
+.matchmaking-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* No background color here — it will inherit from the main app */
+}
+
+/* Main white card */
+.matchmaking-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Heading */
+.welcome-text {
+  margin: 0;
+  font-size: 26px;
+  color: #333;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Input and button row */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.username-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.invite-btn {
+  background-color: #ff5e7d;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.invite-btn:hover {
+  background-color: #e64768;
+}
+
+/* Invite popup */
+.invite-popup {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0f8ff;
+  border: 1px solid #a2d2ff;
+}
+
+.invite-msg {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.invite-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+.username-input {
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.invite-details {
+  background-color: #f0f8ff;
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}

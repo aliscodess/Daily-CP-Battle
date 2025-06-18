@@ -1,0 +1,151 @@
+/* Full-page layout */
+.cf-container {
+  background: linear-gradient(135deg, #f2a0c4, #de77c7);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Navbar */
+.cf-navbar {
+  display: flex;
+  gap: 25px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ffffffcc; /* semi-transparent white */
+  border-radius: 12px;
+  width: fit-content;
+  margin: 30px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  position: relative;
+}
+
+.cf-link {
+  color: #1e1e2f;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cf-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #e94560;
+  transition: width 0.3s;
+}
+
+.cf-link:hover {
+  color: #e94560;
+}
+
+.cf-link:hover::after {
+  width: 100%;
+}
+
+.cf-divider {
+  color: #ccc;
+}
+
+
+.cf-link {
+  color: #e94560;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.cf-link:hover {
+  color: #ffd369;
+}
+
+.cf-divider {
+  color: #ccc;
+}
+
+/* Content */
+.cf-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  z-index: 10;
+  position: relative;
+}
+
+.cf-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f7f9fa;
+}
+
+/* Battle Button */
+.cf-button {
+  padding: 15px 30px;
+  background-color: #e94560;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cf-button:hover {
+  background-color: #ff5e7d;
+  transform: scale(1.05);
+}
+
+/* Animated code side panes */
+.code-pane {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  opacity: 0.08;
+  pointer-events: none;
+  white-space: pre;
+  line-height: 1.4;
+}
+
+.code-pane.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.05), transparent);
+}
+
+.code-pane.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.05), transparent);
+}
+
+.code-content {
+  animation: scrollCode 30s linear infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes scrollCode {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
